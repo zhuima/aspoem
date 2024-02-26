@@ -1,7 +1,17 @@
+/*
+ * @Author: zhuima zhuima314@gmail.com
+ * @Date: 2024-02-26 17:00:09
+ * @LastEditors: zhuima zhuima314@gmail.com
+ * @LastEditTime: 2024-02-26 17:16:44
+ * @FilePath: /aspoem/src/app/(.)/poem/[id]/components/body.tsx
+ * @Description: 
+ * 
+ * Copyright (c) 2024 by ${git_name_email}, All Rights Reserved. 
+ */
 import { type Author, type Poem } from "@prisma/client";
 import { Verse } from "~/components/verse";
 import { cn } from "~/utils";
-import CopyButton from "./copy";
+import CopyButton from "./copybutton";
 
 export const Body = (props: {
   poem: Poem & { author: Author };
